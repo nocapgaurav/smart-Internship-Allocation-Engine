@@ -13,104 +13,145 @@ interface Skill {
 }
 
 const skills: Skill[] = [
-  // Programming Languages
-  { id: '1', name: 'HTML/CSS', category: 'Programming', difficulty: 'beginner' },
-  { id: '2', name: 'JavaScript', category: 'Programming', difficulty: 'beginner' },
-  { id: '3', name: 'Python', category: 'Programming', difficulty: 'beginner' },
-  { id: '4', name: 'Java', category: 'Programming', difficulty: 'intermediate' },
-  { id: '5', name: 'C++', category: 'Programming', difficulty: 'intermediate' },
-  { id: '6', name: 'TypeScript', category: 'Programming', difficulty: 'intermediate' },
-  { id: '7', name: 'Go', category: 'Programming', difficulty: 'advanced' },
-  { id: '8', name: 'Rust', category: 'Programming', difficulty: 'advanced' },
-  { id: '9', name: 'Assembly', category: 'Programming', difficulty: 'advanced' },
+  // JavaScript - All Levels
+  { id: '1', name: 'JavaScript Basics', category: 'Programming', difficulty: 'beginner' },
+  { id: '2', name: 'JavaScript ES6+', category: 'Programming', difficulty: 'intermediate' },
+  { id: '3', name: 'JavaScript Performance & Optimization', category: 'Programming', difficulty: 'advanced' },
 
-  // Frontend Development
-  { id: '10', name: 'Basic Web Design', category: 'Frontend', difficulty: 'beginner' },
-  { id: '11', name: 'Bootstrap', category: 'Frontend', difficulty: 'beginner' },
-  { id: '12', name: 'Tailwind CSS', category: 'Frontend', difficulty: 'beginner' },
-  { id: '13', name: 'React', category: 'Frontend', difficulty: 'intermediate' },
-  { id: '14', name: 'Vue.js', category: 'Frontend', difficulty: 'intermediate' },
-  { id: '15', name: 'Angular', category: 'Frontend', difficulty: 'intermediate' },
-  { id: '16', name: 'Svelte', category: 'Frontend', difficulty: 'advanced' },
-  { id: '17', name: 'Micro-frontends', category: 'Frontend', difficulty: 'advanced' },
-  { id: '18', name: 'WebAssembly', category: 'Frontend', difficulty: 'advanced' },
+  // Python - All Levels
+  { id: '4', name: 'Python Basics', category: 'Programming', difficulty: 'beginner' },
+  { id: '5', name: 'Python Libraries & Frameworks', category: 'Programming', difficulty: 'intermediate' },
+  { id: '6', name: 'Python Advanced Concepts', category: 'Programming', difficulty: 'advanced' },
 
-  // Backend Development
-  { id: '19', name: 'Basic APIs', category: 'Backend', difficulty: 'beginner' },
-  { id: '20', name: 'Express.js', category: 'Backend', difficulty: 'beginner' },
-  { id: '21', name: 'Flask/FastAPI', category: 'Backend', difficulty: 'beginner' },
-  { id: '22', name: 'Node.js', category: 'Backend', difficulty: 'intermediate' },
-  { id: '23', name: 'Django', category: 'Backend', difficulty: 'intermediate' },
-  { id: '24', name: 'Spring Boot', category: 'Backend', difficulty: 'intermediate' },
-  { id: '25', name: 'GraphQL', category: 'Backend', difficulty: 'advanced' },
-  { id: '26', name: 'Microservices', category: 'Backend', difficulty: 'advanced' },
-  { id: '27', name: 'Distributed Systems', category: 'Backend', difficulty: 'advanced' },
+  // Java - All Levels
+  { id: '7', name: 'Java Fundamentals', category: 'Programming', difficulty: 'beginner' },
+  { id: '8', name: 'Java OOP & Collections', category: 'Programming', difficulty: 'intermediate' },
+  { id: '9', name: 'Java Concurrency & JVM', category: 'Programming', difficulty: 'advanced' },
 
-  // Database & Data
-  { id: '28', name: 'SQL Basics', category: 'Database', difficulty: 'beginner' },
-  { id: '29', name: 'MySQL/PostgreSQL', category: 'Database', difficulty: 'beginner' },
-  { id: '30', name: 'MongoDB', category: 'Database', difficulty: 'beginner' },
-  { id: '31', name: 'Redis', category: 'Database', difficulty: 'intermediate' },
-  { id: '32', name: 'Database Design', category: 'Database', difficulty: 'intermediate' },
-  { id: '33', name: 'Data Warehousing', category: 'Database', difficulty: 'intermediate' },
-  { id: '34', name: 'Database Optimization', category: 'Database', difficulty: 'advanced' },
-  { id: '35', name: 'Distributed Databases', category: 'Database', difficulty: 'advanced' },
-  { id: '36', name: 'Database Sharding', category: 'Database', difficulty: 'advanced' },
+  // C++ - All Levels
+  { id: '10', name: 'C++ Basics', category: 'Programming', difficulty: 'beginner' },
+  { id: '11', name: 'C++ OOP & STL', category: 'Programming', difficulty: 'intermediate' },
+  { id: '12', name: 'C++ Memory Management & Templates', category: 'Programming', difficulty: 'advanced' },
 
-  // AI/ML & Analytics
-  { id: '37', name: 'Data Analysis', category: 'AI/ML', difficulty: 'beginner' },
-  { id: '38', name: 'Excel/Sheets', category: 'AI/ML', difficulty: 'beginner' },
-  { id: '39', name: 'Pandas/NumPy', category: 'AI/ML', difficulty: 'beginner' },
-  { id: '40', name: 'Machine Learning', category: 'AI/ML', difficulty: 'intermediate' },
-  { id: '41', name: 'Scikit-learn', category: 'AI/ML', difficulty: 'intermediate' },
-  { id: '42', name: 'TensorFlow/PyTorch', category: 'AI/ML', difficulty: 'intermediate' },
-  { id: '43', name: 'Deep Learning', category: 'AI/ML', difficulty: 'advanced' },
-  { id: '44', name: 'Natural Language Processing', category: 'AI/ML', difficulty: 'advanced' },
-  { id: '45', name: 'Computer Vision', category: 'AI/ML', difficulty: 'advanced' },
+  // TypeScript - All Levels
+  { id: '13', name: 'TypeScript Basics', category: 'Programming', difficulty: 'beginner' },
+  { id: '14', name: 'TypeScript Advanced Types', category: 'Programming', difficulty: 'intermediate' },
+  { id: '15', name: 'TypeScript Design Patterns', category: 'Programming', difficulty: 'advanced' },
 
-  // Design & UX
-  { id: '46', name: 'Basic Design Principles', category: 'Design', difficulty: 'beginner' },
-  { id: '47', name: 'Canva', category: 'Design', difficulty: 'beginner' },
-  { id: '48', name: 'Figma', category: 'Design', difficulty: 'beginner' },
-  { id: '49', name: 'UI/UX Design', category: 'Design', difficulty: 'intermediate' },
-  { id: '50', name: 'Adobe Creative Suite', category: 'Design', difficulty: 'intermediate' },
-  { id: '51', name: 'Prototyping', category: 'Design', difficulty: 'intermediate' },
-  { id: '52', name: 'Design Systems', category: 'Design', difficulty: 'advanced' },
-  { id: '53', name: 'User Research', category: 'Design', difficulty: 'advanced' },
-  { id: '54', name: 'Accessibility Design', category: 'Design', difficulty: 'advanced' },
+  // React - All Levels
+  { id: '16', name: 'React Basics', category: 'Frontend', difficulty: 'beginner' },
+  { id: '17', name: 'React Hooks & State Management', category: 'Frontend', difficulty: 'intermediate' },
+  { id: '18', name: 'React Performance & Architecture', category: 'Frontend', difficulty: 'advanced' },
 
-  // DevOps & Tools
-  { id: '55', name: 'Git Basics', category: 'DevOps', difficulty: 'beginner' },
-  { id: '56', name: 'GitHub/GitLab', category: 'DevOps', difficulty: 'beginner' },
-  { id: '57', name: 'Command Line', category: 'DevOps', difficulty: 'beginner' },
-  { id: '58', name: 'Docker', category: 'DevOps', difficulty: 'intermediate' },
-  { id: '59', name: 'CI/CD Pipelines', category: 'DevOps', difficulty: 'intermediate' },
-  { id: '60', name: 'Linux Administration', category: 'DevOps', difficulty: 'intermediate' },
-  { id: '61', name: 'Kubernetes', category: 'DevOps', difficulty: 'advanced' },
-  { id: '62', name: 'Infrastructure as Code', category: 'DevOps', difficulty: 'advanced' },
-  { id: '63', name: 'Site Reliability Engineering', category: 'DevOps', difficulty: 'advanced' },
+  // Vue.js - All Levels
+  { id: '19', name: 'Vue.js Basics', category: 'Frontend', difficulty: 'beginner' },
+  { id: '20', name: 'Vue.js Composition API', category: 'Frontend', difficulty: 'intermediate' },
+  { id: '21', name: 'Vue.js Advanced Patterns', category: 'Frontend', difficulty: 'advanced' },
 
-  // Cloud & Infrastructure
-  { id: '64', name: 'Basic Cloud Concepts', category: 'Cloud', difficulty: 'beginner' },
-  { id: '65', name: 'Firebase', category: 'Cloud', difficulty: 'beginner' },
-  { id: '66', name: 'Vercel/Netlify', category: 'Cloud', difficulty: 'beginner' },
-  { id: '67', name: 'AWS Services', category: 'Cloud', difficulty: 'intermediate' },
-  { id: '68', name: 'Google Cloud Platform', category: 'Cloud', difficulty: 'intermediate' },
-  { id: '69', name: 'Azure', category: 'Cloud', difficulty: 'intermediate' },
-  { id: '70', name: 'Cloud Architecture', category: 'Cloud', difficulty: 'advanced' },
-  { id: '71', name: 'Serverless Computing', category: 'Cloud', difficulty: 'advanced' },
-  { id: '72', name: 'Multi-Cloud Strategy', category: 'Cloud', difficulty: 'advanced' },
+  // Angular - All Levels
+  { id: '22', name: 'Angular Basics', category: 'Frontend', difficulty: 'beginner' },
+  { id: '23', name: 'Angular Services & Routing', category: 'Frontend', difficulty: 'intermediate' },
+  { id: '24', name: 'Angular Architecture & RxJS', category: 'Frontend', difficulty: 'advanced' },
 
-  // Mobile Development
-  { id: '73', name: 'Mobile Design Basics', category: 'Mobile', difficulty: 'beginner' },
-  { id: '74', name: 'React Native', category: 'Mobile', difficulty: 'beginner' },
-  { id: '75', name: 'Flutter', category: 'Mobile', difficulty: 'beginner' },
-  { id: '76', name: 'iOS Development', category: 'Mobile', difficulty: 'intermediate' },
-  { id: '77', name: 'Android Development', category: 'Mobile', difficulty: 'intermediate' },
-  { id: '78', name: 'Mobile UI/UX', category: 'Mobile', difficulty: 'intermediate' },
-  { id: '79', name: 'Mobile Performance Optimization', category: 'Mobile', difficulty: 'advanced' },
-  { id: '80', name: 'Cross-platform Architecture', category: 'Mobile', difficulty: 'advanced' },
-  { id: '81', name: 'Mobile Security', category: 'Mobile', difficulty: 'advanced' },
+  // Node.js - All Levels
+  { id: '25', name: 'Node.js Basics', category: 'Backend', difficulty: 'beginner' },
+  { id: '26', name: 'Node.js APIs & Middleware', category: 'Backend', difficulty: 'intermediate' },
+  { id: '27', name: 'Node.js Scalability & Performance', category: 'Backend', difficulty: 'advanced' },
+
+  // Express.js - All Levels
+  { id: '28', name: 'Express.js Basics', category: 'Backend', difficulty: 'beginner' },
+  { id: '29', name: 'Express.js Advanced Routing', category: 'Backend', difficulty: 'intermediate' },
+  { id: '30', name: 'Express.js Security & Testing', category: 'Backend', difficulty: 'advanced' },
+
+  // Django - All Levels
+  { id: '31', name: 'Django Basics', category: 'Backend', difficulty: 'beginner' },
+  { id: '32', name: 'Django Models & Views', category: 'Backend', difficulty: 'intermediate' },
+  { id: '33', name: 'Django REST & Deployment', category: 'Backend', difficulty: 'advanced' },
+
+  // SQL - All Levels
+  { id: '34', name: 'SQL Basics', category: 'Database', difficulty: 'beginner' },
+  { id: '35', name: 'SQL Joins & Functions', category: 'Database', difficulty: 'intermediate' },
+  { id: '36', name: 'SQL Performance & Optimization', category: 'Database', difficulty: 'advanced' },
+
+  // MongoDB - All Levels
+  { id: '37', name: 'MongoDB Basics', category: 'Database', difficulty: 'beginner' },
+  { id: '38', name: 'MongoDB Aggregation', category: 'Database', difficulty: 'intermediate' },
+  { id: '39', name: 'MongoDB Sharding & Replication', category: 'Database', difficulty: 'advanced' },
+
+  // PostgreSQL - All Levels
+  { id: '40', name: 'PostgreSQL Basics', category: 'Database', difficulty: 'beginner' },
+  { id: '41', name: 'PostgreSQL Advanced Queries', category: 'Database', difficulty: 'intermediate' },
+  { id: '42', name: 'PostgreSQL Administration', category: 'Database', difficulty: 'advanced' },
+
+  // Machine Learning - All Levels
+  { id: '43', name: 'ML Fundamentals', category: 'AI/ML', difficulty: 'beginner' },
+  { id: '44', name: 'ML Algorithms & Models', category: 'AI/ML', difficulty: 'intermediate' },
+  { id: '45', name: 'ML Production & MLOps', category: 'AI/ML', difficulty: 'advanced' },
+
+  // Data Science - All Levels
+  { id: '46', name: 'Data Analysis Basics', category: 'AI/ML', difficulty: 'beginner' },
+  { id: '47', name: 'Statistical Analysis', category: 'AI/ML', difficulty: 'intermediate' },
+  { id: '48', name: 'Advanced Analytics', category: 'AI/ML', difficulty: 'advanced' },
+
+  // TensorFlow - All Levels
+  { id: '49', name: 'TensorFlow Basics', category: 'AI/ML', difficulty: 'beginner' },
+  { id: '50', name: 'TensorFlow Models', category: 'AI/ML', difficulty: 'intermediate' },
+  { id: '51', name: 'TensorFlow Production', category: 'AI/ML', difficulty: 'advanced' },
+
+  // UI/UX Design - All Levels
+  { id: '52', name: 'Design Principles', category: 'Design', difficulty: 'beginner' },
+  { id: '53', name: 'User Experience Design', category: 'Design', difficulty: 'intermediate' },
+  { id: '54', name: 'Design Systems & Strategy', category: 'Design', difficulty: 'advanced' },
+
+  // Figma - All Levels
+  { id: '55', name: 'Figma Basics', category: 'Design', difficulty: 'beginner' },
+  { id: '56', name: 'Figma Prototyping', category: 'Design', difficulty: 'intermediate' },
+  { id: '57', name: 'Figma Advanced Workflows', category: 'Design', difficulty: 'advanced' },
+
+  // Adobe Creative Suite - All Levels
+  { id: '58', name: 'Adobe Basics', category: 'Design', difficulty: 'beginner' },
+  { id: '59', name: 'Adobe Professional Design', category: 'Design', difficulty: 'intermediate' },
+  { id: '60', name: 'Adobe Advanced Techniques', category: 'Design', difficulty: 'advanced' },
+
+  // Git - All Levels
+  { id: '61', name: 'Git Basics', category: 'DevOps', difficulty: 'beginner' },
+  { id: '62', name: 'Git Branching & Merging', category: 'DevOps', difficulty: 'intermediate' },
+  { id: '63', name: 'Git Advanced Workflows', category: 'DevOps', difficulty: 'advanced' },
+
+  // Docker - All Levels
+  { id: '64', name: 'Docker Basics', category: 'DevOps', difficulty: 'beginner' },
+  { id: '65', name: 'Docker Compose & Networks', category: 'DevOps', difficulty: 'intermediate' },
+  { id: '66', name: 'Docker Production & Security', category: 'DevOps', difficulty: 'advanced' },
+
+  // Kubernetes - All Levels
+  { id: '67', name: 'Kubernetes Basics', category: 'DevOps', difficulty: 'beginner' },
+  { id: '68', name: 'Kubernetes Deployments', category: 'DevOps', difficulty: 'intermediate' },
+  { id: '69', name: 'Kubernetes Administration', category: 'DevOps', difficulty: 'advanced' },
+
+  // AWS - All Levels
+  { id: '70', name: 'AWS Basics', category: 'Cloud', difficulty: 'beginner' },
+  { id: '71', name: 'AWS Core Services', category: 'Cloud', difficulty: 'intermediate' },
+  { id: '72', name: 'AWS Architecture & Security', category: 'Cloud', difficulty: 'advanced' },
+
+  // Google Cloud - All Levels
+  { id: '73', name: 'GCP Basics', category: 'Cloud', difficulty: 'beginner' },
+  { id: '74', name: 'GCP Services & APIs', category: 'Cloud', difficulty: 'intermediate' },
+  { id: '75', name: 'GCP Enterprise Solutions', category: 'Cloud', difficulty: 'advanced' },
+
+  // Azure - All Levels
+  { id: '76', name: 'Azure Basics', category: 'Cloud', difficulty: 'beginner' },
+  { id: '77', name: 'Azure Development', category: 'Cloud', difficulty: 'intermediate' },
+  { id: '78', name: 'Azure Enterprise Architecture', category: 'Cloud', difficulty: 'advanced' },
+
+  // React Native - All Levels
+  { id: '79', name: 'React Native Basics', category: 'Mobile', difficulty: 'beginner' },
+  { id: '80', name: 'React Native Navigation', category: 'Mobile', difficulty: 'intermediate' },
+  { id: '81', name: 'React Native Performance', category: 'Mobile', difficulty: 'advanced' },
+
+  // Flutter - All Levels
+  { id: '82', name: 'Flutter Basics', category: 'Mobile', difficulty: 'beginner' },
+  { id: '83', name: 'Flutter State Management', category: 'Mobile', difficulty: 'intermediate' },
+  { id: '84', name: 'Flutter Advanced Architecture', category: 'Mobile', difficulty: 'advanced' },
 ];
 
 const SkillAssessment = () => {
