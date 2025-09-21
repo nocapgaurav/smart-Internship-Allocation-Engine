@@ -13,18 +13,104 @@ interface Skill {
 }
 
 const skills: Skill[] = [
-  { id: '1', name: 'JavaScript', category: 'Programming', difficulty: 'beginner' },
-  { id: '2', name: 'React', category: 'Frontend', difficulty: 'intermediate' },
+  // Programming Languages
+  { id: '1', name: 'HTML/CSS', category: 'Programming', difficulty: 'beginner' },
+  { id: '2', name: 'JavaScript', category: 'Programming', difficulty: 'beginner' },
   { id: '3', name: 'Python', category: 'Programming', difficulty: 'beginner' },
-  { id: '4', name: 'Machine Learning', category: 'AI/ML', difficulty: 'advanced' },
-  { id: '5', name: 'UI/UX Design', category: 'Design', difficulty: 'intermediate' },
-  { id: '6', name: 'Data Analysis', category: 'Analytics', difficulty: 'intermediate' },
-  { id: '7', name: 'Node.js', category: 'Backend', difficulty: 'intermediate' },
-  { id: '8', name: 'SQL', category: 'Database', difficulty: 'beginner' },
-  { id: '9', name: 'Figma', category: 'Design', difficulty: 'beginner' },
-  { id: '10', name: 'AWS', category: 'Cloud', difficulty: 'advanced' },
-  { id: '11', name: 'Git', category: 'Tools', difficulty: 'beginner' },
-  { id: '12', name: 'Docker', category: 'DevOps', difficulty: 'advanced' },
+  { id: '4', name: 'Java', category: 'Programming', difficulty: 'intermediate' },
+  { id: '5', name: 'C++', category: 'Programming', difficulty: 'intermediate' },
+  { id: '6', name: 'TypeScript', category: 'Programming', difficulty: 'intermediate' },
+  { id: '7', name: 'Go', category: 'Programming', difficulty: 'advanced' },
+  { id: '8', name: 'Rust', category: 'Programming', difficulty: 'advanced' },
+  { id: '9', name: 'Assembly', category: 'Programming', difficulty: 'advanced' },
+
+  // Frontend Development
+  { id: '10', name: 'Basic Web Design', category: 'Frontend', difficulty: 'beginner' },
+  { id: '11', name: 'Bootstrap', category: 'Frontend', difficulty: 'beginner' },
+  { id: '12', name: 'Tailwind CSS', category: 'Frontend', difficulty: 'beginner' },
+  { id: '13', name: 'React', category: 'Frontend', difficulty: 'intermediate' },
+  { id: '14', name: 'Vue.js', category: 'Frontend', difficulty: 'intermediate' },
+  { id: '15', name: 'Angular', category: 'Frontend', difficulty: 'intermediate' },
+  { id: '16', name: 'Svelte', category: 'Frontend', difficulty: 'advanced' },
+  { id: '17', name: 'Micro-frontends', category: 'Frontend', difficulty: 'advanced' },
+  { id: '18', name: 'WebAssembly', category: 'Frontend', difficulty: 'advanced' },
+
+  // Backend Development
+  { id: '19', name: 'Basic APIs', category: 'Backend', difficulty: 'beginner' },
+  { id: '20', name: 'Express.js', category: 'Backend', difficulty: 'beginner' },
+  { id: '21', name: 'Flask/FastAPI', category: 'Backend', difficulty: 'beginner' },
+  { id: '22', name: 'Node.js', category: 'Backend', difficulty: 'intermediate' },
+  { id: '23', name: 'Django', category: 'Backend', difficulty: 'intermediate' },
+  { id: '24', name: 'Spring Boot', category: 'Backend', difficulty: 'intermediate' },
+  { id: '25', name: 'GraphQL', category: 'Backend', difficulty: 'advanced' },
+  { id: '26', name: 'Microservices', category: 'Backend', difficulty: 'advanced' },
+  { id: '27', name: 'Distributed Systems', category: 'Backend', difficulty: 'advanced' },
+
+  // Database & Data
+  { id: '28', name: 'SQL Basics', category: 'Database', difficulty: 'beginner' },
+  { id: '29', name: 'MySQL/PostgreSQL', category: 'Database', difficulty: 'beginner' },
+  { id: '30', name: 'MongoDB', category: 'Database', difficulty: 'beginner' },
+  { id: '31', name: 'Redis', category: 'Database', difficulty: 'intermediate' },
+  { id: '32', name: 'Database Design', category: 'Database', difficulty: 'intermediate' },
+  { id: '33', name: 'Data Warehousing', category: 'Database', difficulty: 'intermediate' },
+  { id: '34', name: 'Database Optimization', category: 'Database', difficulty: 'advanced' },
+  { id: '35', name: 'Distributed Databases', category: 'Database', difficulty: 'advanced' },
+  { id: '36', name: 'Database Sharding', category: 'Database', difficulty: 'advanced' },
+
+  // AI/ML & Analytics
+  { id: '37', name: 'Data Analysis', category: 'AI/ML', difficulty: 'beginner' },
+  { id: '38', name: 'Excel/Sheets', category: 'AI/ML', difficulty: 'beginner' },
+  { id: '39', name: 'Pandas/NumPy', category: 'AI/ML', difficulty: 'beginner' },
+  { id: '40', name: 'Machine Learning', category: 'AI/ML', difficulty: 'intermediate' },
+  { id: '41', name: 'Scikit-learn', category: 'AI/ML', difficulty: 'intermediate' },
+  { id: '42', name: 'TensorFlow/PyTorch', category: 'AI/ML', difficulty: 'intermediate' },
+  { id: '43', name: 'Deep Learning', category: 'AI/ML', difficulty: 'advanced' },
+  { id: '44', name: 'Natural Language Processing', category: 'AI/ML', difficulty: 'advanced' },
+  { id: '45', name: 'Computer Vision', category: 'AI/ML', difficulty: 'advanced' },
+
+  // Design & UX
+  { id: '46', name: 'Basic Design Principles', category: 'Design', difficulty: 'beginner' },
+  { id: '47', name: 'Canva', category: 'Design', difficulty: 'beginner' },
+  { id: '48', name: 'Figma', category: 'Design', difficulty: 'beginner' },
+  { id: '49', name: 'UI/UX Design', category: 'Design', difficulty: 'intermediate' },
+  { id: '50', name: 'Adobe Creative Suite', category: 'Design', difficulty: 'intermediate' },
+  { id: '51', name: 'Prototyping', category: 'Design', difficulty: 'intermediate' },
+  { id: '52', name: 'Design Systems', category: 'Design', difficulty: 'advanced' },
+  { id: '53', name: 'User Research', category: 'Design', difficulty: 'advanced' },
+  { id: '54', name: 'Accessibility Design', category: 'Design', difficulty: 'advanced' },
+
+  // DevOps & Tools
+  { id: '55', name: 'Git Basics', category: 'DevOps', difficulty: 'beginner' },
+  { id: '56', name: 'GitHub/GitLab', category: 'DevOps', difficulty: 'beginner' },
+  { id: '57', name: 'Command Line', category: 'DevOps', difficulty: 'beginner' },
+  { id: '58', name: 'Docker', category: 'DevOps', difficulty: 'intermediate' },
+  { id: '59', name: 'CI/CD Pipelines', category: 'DevOps', difficulty: 'intermediate' },
+  { id: '60', name: 'Linux Administration', category: 'DevOps', difficulty: 'intermediate' },
+  { id: '61', name: 'Kubernetes', category: 'DevOps', difficulty: 'advanced' },
+  { id: '62', name: 'Infrastructure as Code', category: 'DevOps', difficulty: 'advanced' },
+  { id: '63', name: 'Site Reliability Engineering', category: 'DevOps', difficulty: 'advanced' },
+
+  // Cloud & Infrastructure
+  { id: '64', name: 'Basic Cloud Concepts', category: 'Cloud', difficulty: 'beginner' },
+  { id: '65', name: 'Firebase', category: 'Cloud', difficulty: 'beginner' },
+  { id: '66', name: 'Vercel/Netlify', category: 'Cloud', difficulty: 'beginner' },
+  { id: '67', name: 'AWS Services', category: 'Cloud', difficulty: 'intermediate' },
+  { id: '68', name: 'Google Cloud Platform', category: 'Cloud', difficulty: 'intermediate' },
+  { id: '69', name: 'Azure', category: 'Cloud', difficulty: 'intermediate' },
+  { id: '70', name: 'Cloud Architecture', category: 'Cloud', difficulty: 'advanced' },
+  { id: '71', name: 'Serverless Computing', category: 'Cloud', difficulty: 'advanced' },
+  { id: '72', name: 'Multi-Cloud Strategy', category: 'Cloud', difficulty: 'advanced' },
+
+  // Mobile Development
+  { id: '73', name: 'Mobile Design Basics', category: 'Mobile', difficulty: 'beginner' },
+  { id: '74', name: 'React Native', category: 'Mobile', difficulty: 'beginner' },
+  { id: '75', name: 'Flutter', category: 'Mobile', difficulty: 'beginner' },
+  { id: '76', name: 'iOS Development', category: 'Mobile', difficulty: 'intermediate' },
+  { id: '77', name: 'Android Development', category: 'Mobile', difficulty: 'intermediate' },
+  { id: '78', name: 'Mobile UI/UX', category: 'Mobile', difficulty: 'intermediate' },
+  { id: '79', name: 'Mobile Performance Optimization', category: 'Mobile', difficulty: 'advanced' },
+  { id: '80', name: 'Cross-platform Architecture', category: 'Mobile', difficulty: 'advanced' },
+  { id: '81', name: 'Mobile Security', category: 'Mobile', difficulty: 'advanced' },
 ];
 
 const SkillAssessment = () => {
