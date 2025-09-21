@@ -1,10 +1,35 @@
-import { ArrowRight, Brain, Users, BarChart3 } from "lucide-react";
+import { ArrowRight, Brain, Users, BarChart3, Gamepad2 } from "lucide-react";
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import heroImage from "@/assets/hero-internship.jpg";
+import SkillAssessment from "@/components/SkillAssessment";
+import { useState } from "react";
 
 const LandingPage = () => {
+  const [showAssessment, setShowAssessment] = useState(false);
+
+  if (showAssessment) {
+    return (
+      <div className="min-h-screen bg-gradient-to-br from-primary/5 via-background to-primary-glow/5">
+        <div className="container mx-auto px-4 py-8">
+          <div className="text-center mb-8">
+            <Button
+              variant="ghost"
+              onClick={() => setShowAssessment(false)}
+              className="mb-4"
+            >
+              ← Back to Home
+            </Button>
+            <h1 className="text-3xl font-bold mb-2">Discover Your Skills</h1>
+            <p className="text-muted-foreground">Complete this quick assessment to find your perfect internship match</p>
+          </div>
+          <SkillAssessment />
+        </div>
+      </div>
+    );
+  }
+
   return (
     <div className="min-h-screen bg-gradient-to-br from-background via-primary-light/30 to-accent/20">
       {/* Header */}
@@ -32,20 +57,22 @@ const LandingPage = () => {
               <h1 className="text-4xl lg:text-6xl font-bold mb-6 bg-gradient-to-r from-primary via-primary-glow to-primary bg-clip-text text-transparent">
                 Smart Internship Allocation Engine
               </h1>
-              <p className="text-xl text-muted-foreground mb-8 leading-relaxed">
-                Powered by AI to match students with perfect internship opportunities. 
-                Fair, transparent, and optimized for everyone's success.
+               <p className="text-xl text-muted-foreground mb-8 leading-relaxed">
+                Take our interactive skill assessment to discover your strengths and find the perfect internship match.
+                Fair, transparent, and powered by AI for optimal results.
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
+                <Button 
+                  className="btn-hero group"
+                  onClick={() => setShowAssessment(true)}
+                >
+                  <Gamepad2 className="mr-2 w-5 h-5" />
+                  Discover Your Skills
+                  <ArrowRight className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" />
+                </Button>
                 <Link to="/student">
-                  <Button className="btn-hero group">
-                    Student Portal
-                    <ArrowRight className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" />
-                  </Button>
-                </Link>
-                <Link to="/admin">
                   <Button variant="outline" className="px-8 py-4 text-lg border-primary/30 hover:bg-primary/10">
-                    Admin Dashboard
+                    Student Dashboard
                   </Button>
                 </Link>
               </div>
